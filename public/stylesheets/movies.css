@@ -1,0 +1,85 @@
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    width: 0;
+}
+
+.moviecard {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5rem;
+}
+
+.im {
+    border-radius: 10px;
+    height: 45vh;
+    margin: 2rem;
+    width: 45vw;
+}
+
+.mtable {
+    text-align: center;
+}
+
+#mtitle {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+#mno-border {
+    border: none;
+    box-shadow: none;
+}
+
+.mtd {
+    padding: 5px;
+    color: #100068;
+}
+
+.mcontain {
+    position: relative;
+    background: rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    margin: 2% 10%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    border-radius: 15px;
+}
+
+.mp {
+    color: #F05454;
+    text-align: center;
+}
+
+.mcontent {
+    text-align: justify;
+    line-height: 2;
+    width: 90%;
+    font-weight: 600;
+    font-family: arial;
+    z-index: 1;
+    color: #0A1931
+}
+
+#mabout {
+    width: 70%;
+    position: relative;
+    text-align: justify;
+}
+
+.mdt {
+    font-size: x-large;
+}
+
+.mspan {
+    border-bottom: 2px solid;
+    color: #100068;
+    font-weight: 900;
+}
