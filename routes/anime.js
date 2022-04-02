@@ -9,29 +9,7 @@ router.post("/anime", (req, res) => {
     const option = req.body.quary;
     const { get } = require("https");
     let data;
-    var optValue = null;
-    if (option == "1") {
-        optValue = "neko";
-    } else if (option == "2") {
-        optValue = "hug";
-    } else if (option == "3") {
-        optValue = "pat";
-    } else if (option == "4") {
-        optValue = "waifu";
-    } else if (option == "5") {
-        optValue = "cry";
-    } else if (option == "6") {
-        optValue = "kiss";
-    } else if (option == "7") {
-        optValue = "slap";
-    } else if (option == "8") {
-        optValue = "smug";
-    } else if (option == "9") {
-        optValue = "punch";
-    } else {
-        console.log("something went wrong!")
-    }
-    var url = `https://neko-love.xyz/api/v1/${optValue}`;
+    var url = `https://neko-love.xyz/api/v1/${option}`;
     get(url, (response) => {
         const { statusCode } = res;
         if (statusCode != 200) {

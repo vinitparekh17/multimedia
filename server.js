@@ -17,4 +17,4 @@ app.use(require('./routes/weather'))
 
 
 // Init server on port 
-app.listen(8888, () => console.log("http:localhost:8888"));
+app.listen(8000, () => console.log("http:localhost:8000"));

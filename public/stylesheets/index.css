@@ -21,9 +21,6 @@ body{
     left: 15%;
     margin-bottom: 3rem;
     border-radius: 20px;
-    border: 1px solid #fff;
-    background: rgb(255, 255, 255);
-    box-shadow: 1px 1px 1px rgb(121, 119, 119);
 }
 
 .foot {
@@ -478,4 +475,151 @@ ul > li {
     background-color: #666;
     color: #FFF;
     text-decoration: none;
+}
+
+.w90{
+    width: 90%;
+    margin-top: 3rem;
+}
+
+/* movies page */
+
+.moviecard {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5rem;
+}
+
+.im {
+    border-radius: 10px;
+    height: 45vh;
+    margin: 2rem;
+    width: 45vw;
+}
+
+.mtable {
+    text-align: center;
+}
+
+#mtitle {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+#mno-border {
+    border: none;
+    box-shadow: none;
+}
+
+.mtd {
+    padding: 5px;
+    color: #100068;
+}
+
+.mcontain {
+    position: relative;
+    background: rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    margin: 2% 10%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    border-radius: 15px;
+}
+
+.mp {
+    color: #F05454;
+    text-align: center;
+}
+
+.mcontent {
+    text-align: justify;
+    line-height: 2;
+    width: 90%;
+    font-weight: 600;
+    font-family: arial;
+    z-index: 1;
+    color: #0A1931
+}
+
+#mabout {
+    width: 70%;
+    position: relative;
+    text-align: justify;
+}
+
+.mdt {
+    font-size: x-large;
+}
+
+.mspan {
+    border-bottom: 2px solid;
+    color: #100068;
+    font-weight: 900;
+}
+
+/* anime page */
+
+.animeImg{
+    margin: 2rem;
+    width: auto;
+    height: 50vh;
+}
+
+/* weather page  */
+#app-main {
+    width: 60vh;
+    margin: 100px auto;
+    background-color: rgba(227, 230, 231, 0.6);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: #0A1931;
+}
+
+#app-main > * {
+    margin-bottom: 20px;
+}
+
+#weather-body {
+    display: none;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* inner div date and time */
+#location-details {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/*outer div min and max part   */
+#weather-status {
+    padding: 20px;
+}
+
+/* inner div min and max part  */
+#temp {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*min and max,weather */
+#min-max,
+#weather {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
 }

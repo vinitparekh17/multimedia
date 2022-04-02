@@ -17,8 +17,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/stylesheets/playstore.css">
-    <title>Anime</title>
+        <link rel="stylesheet" href="/stylesheets/index.css">
+    <title>Weather</title>
 </head>
 
 <body>
@@ -38,10 +38,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="/#feature">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="/#pricing">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -49,10 +49,10 @@
                             Dropdown link
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Movies</a></li>
-                            <li><a class="dropdown-item" href="#">Apps & Games</a></li>
-                            <li><a class="dropdown-item" href="#">Animes</a></li>
-                            <li><a class="dropdown-item" href="#">Weather</a></li>
+                            <li><a class="dropdown-item" href="/movies">Movies</a></li>
+                            <li><a class="dropdown-item" href="/playstore">Apps & Games</a></li>
+                            <li><a class="dropdown-item" href="/anime">Animes</a></li>
+                            <li><a class="dropdown-item" href="/weather">Weather</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -60,11 +60,20 @@
         </div>
     </nav>
     <center>
-        <form class="d-flex w90">
-            <input class="form-control me-2" name="s" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex w90" method="post">
+            <input class="form-control me-2" name="city" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </center>
-</body>
 
+                <div><%= cityName %>, <%= country %></div>
+                <div><%= time %></div>
+                <div><%=temp%>&deg;C</div>
+                <!-- <div class="min-max" id="min-max"><%= %>&deg;C(min) /<$= %>&deg;C(max)</div> -->
+                <!-- <div><%= %></div> -->
+                <!-- <div class="img" id="img"></div> -->
+            </div>
+        </div>
+    </div>
+</body>
 </html>
