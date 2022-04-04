@@ -1,15 +1,18 @@
 const { Router } = require('express');
 const playstore = require('google-play-scraper');
+const checkAuth = require('../checkAuth');
 const router = Router();
 
-router.get("/playstore", (req, res) => {
-    res.sendFile(__dirname + "/components/playstore.html")
+router.get("/playstore", checkAuth, (req, res) => {
+    let user = req.user;
+    // res.sendFile(__dirname + "/components/playstore.html")
+    res.render('playstore', {appName: null, user})
 })
 
 router.post("/playstore", (req, res) => {
 
     playstore.search({
-        term: req.body.s,
+        term: req.body.search,
         num: 1
 
     }).then(Data => {
@@ -17,10 +20,9 @@ router.post("/playstore", (req, res) => {
 
         try {
             App = JSON.parse(JSON.stringify(Data[0]));
-
-            console.log(Data)
+            console.log(App.title);
         } catch (error) {
-            return res.write("<h1> Error 404: </h1> <br /> <h2> Application not found!</h2>")
+            return;
         }
 
         res.render('playstore',

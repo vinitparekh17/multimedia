@@ -1,8 +1,10 @@
 const {Router} = require('express');
 const router = Router();
+const checkAuth = require('../checkAuth');
 
-router.get("/anime", (req, res) => {
-    res.sendFile(__dirname + "/components/anime.html")
+router.get("/anime", checkAuth, (req, res) => {
+    let user = req.user
+    res.render('anime', {imageUrl: null, user})
 })
 
 router.post("/anime", (req, res) => {

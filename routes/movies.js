@@ -1,10 +1,13 @@
 const https = require('https');
 const { Router } = require('express');
+const checkAuth = require('../checkAuth');
 const router = Router();
 const key = `b31cf485`;
 
-router.get("/movies", (req, res) => {
-    res.sendFile(__dirname + "/components/movies.html")
+router.get("/movies", checkAuth , (req, res) => {
+    // res.sendFile(__dirname + "/components/movies.html")
+    let user = req.user;
+    res.render('movies', { Title: null, user});
 })
 
 router.post("/movies", (req, res) => {

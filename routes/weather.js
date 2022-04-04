@@ -1,10 +1,12 @@
 const { Router } = require('express');
 const router = Router();
+const checkAuth = require('../checkAuth');
 const key = "156ae8a16859d4cd6898848eaffbdcbd";
 const https = require('https')
 
-router.get('/weather', (req, res) => {
-    res.sendFile(__dirname + "/components/weather.html")
+router.get('/weather', checkAuth, (req, res) => {
+    let user = req.user;
+    res.render('weather', {cityName: null, user})
 })
 
 router.post("/weather", (req, res) => {
