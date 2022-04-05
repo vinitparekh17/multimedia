@@ -11,6 +11,7 @@ app.set("view engine", "ejs");
 app.set("views", __dirname + '/routes/views')
 
 //routes
+app.use(require('./routes/login'))
 app.use(require('./routes/home'))
 app.use(require('./routes/movies'))
 app.use(require('./routes/anime'))

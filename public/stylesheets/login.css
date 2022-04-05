@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+        background: url('../images/bg.png') center / cover no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.text{
+    color: #fff;
+    font-weight: 900;
+}
+
+h1{
+    margin-bottom: 2rem;
+}

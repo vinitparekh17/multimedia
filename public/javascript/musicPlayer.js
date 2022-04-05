@@ -17,7 +17,7 @@ let songs = [
     { songName: "LSD -Genius", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039665463861258/h2.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041933839945768/h2.jpg" },
     { songName: "Sean Paul -No Lie", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039729150189588/h3.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041934049673267/h3.jpg" },
     { songName: "Sean Paul -Go down deh", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039761651843112/h4.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041934271963156/h4.jpg" },
-    { songName: "Danger twins -Thing of Beauty", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039831919034509/h5.mp3", coverPath: "" },
+    { songName: "Danger twins -Thing of Beauty", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039831919034509/h5.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041934494253086/h5.jpg" },
     { songName: "Tick Tick Boom", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039864307441674/h6.mp3", coverPath: "https://media.discordapp.net/attachments/960040901261004830/960042132171784262/h6.jpg?width=941&height=588" },
     { songName: "Burak Yeter - Tuesday", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960039919911337994/h7.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960042207233081374/h7.jpg" },
     { songName: "Dua Lipa - Love Again", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/960040023175102474/h8.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960044951910105098/images.jpeg" },
@@ -33,17 +33,16 @@ let songs = [
     {
         songName: "Where'd You Go(feat.Luna Lark)", filePath: 'https://cdn.discordapp.com/attachments/775740994595323954/775741837642170382/Julius_Dreisig_-_Where_d_You_Go_feat._Luna_LarkMP3_160K.mp3', coverPath: 'https://i.scdn.co/image/ab67616d0000b273100fb4649eae80922bf1acbf'
     },
-    { songName: "Ariana Grande -34+35", filePath: "../songs/naughty/n0.mp3", coverPath: "../img/naughty/n0.jpg" },
-    { songName: "Doja cat -Kiss me more", filePath: "../songs/naughty/n1.mp3", coverPath: "../img/naughty/n1.jpg" },
-    { songName: "Neha kakkar -Dilbar", filePath: "../songs/naughty/n2.mp3", coverPath: "../img/naughty/n2.jpg" },
-    { songName: "Aastha Gill -Kamariya", filePath: "../songs/naughty/n3.mp3", coverPath: "../img/naughty/n3.jpg" },
-    { songName: "Ariana Grande -Position", filePath: "../songs/naughty/n4.mp3", coverPath: "../img/naughty/n4.jpg" },
-    { songName: "Honey singh -Chaar Botal", filePath: "../songs/naughty/n5.mp3", coverPath: "../img/naughty/n5.jpg" },
-    { songName: "Badshaah -Garmi", filePath: "../songs/naughty/n6.mp3", coverPath: "../img/naughty/n6.jpg" },
-    { songName: "Doja cat -Need to know", filePath: "../songs/naughty/n7.mp3", coverPath: "../img/naughty/n7.jpg" },
-    { songName: "Honey singh -Saiyaan ji", filePath: "../songs/naughty/n8.mp3", coverPath: "../img/naughty/n8.jpg" },
-    { songName: "Oo Antava oo antava", filePath: "../songs/naughty/n9.mp3", coverPath: "../img/naughty/n9.jpg" },
+    { songName: "Ariana Grande -34+35", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958287887877681162/n0.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041361904652358/n0.jpg" },
+    { songName: "Doja cat -Kiss me more", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958289463795130398/n1.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041362101768202/n1.jpg" },
+    { songName: "Neha kakkar -Dilbar", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958289464118083594/n2.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041362324070400/n2.jpg" },
+    { songName: "Aastha Gill -Kamariya", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958290760350978088/n3.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041362512830514/n3.jpg" },
+    { songName: "Ariana Grande -Position", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958290761055604796/n4.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041362684805160/n4.jpg" },
+    { songName: "Honey singh -Chaar Botal", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958291262883115018/n5.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041362873528400/n5.jpg" },
+    { songName: "Badshaah -Garmi", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958291263319314432/n6.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041363225845780/n6.jpg" },
+    { songName: "Doja cat -Need to know", filePath: "https://cdn.discordapp.com/attachments/958287122895339540/958292533996318770/n7.mp3", coverPath: "https://cdn.discordapp.com/attachments/960040901261004830/960041363439771678/n7.jpg" }
 ]
+
 let songIndex = 0;
 let playbtn = document.querySelector("#play");
 let previousBtn = document.querySelector("#previous");
@@ -64,9 +63,6 @@ function playPause() {
         songBanner.classList.add("animate");
         songIcons[songIndex].classList.remove('fa-circle-play')
         songIcons[songIndex].classList.add('fa-circle-pause')
-        console.log(songIcons[songIndex]);
-        // console.log(songItems[songIndex])
-
     } else {
         audioElement.pause();
         allPlay();

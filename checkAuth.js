@@ -23,7 +23,7 @@ const checkAuthenticated = (req, res, next) => {
             next();
         })
         .catch(() => {
-            res.redirect('/')
+            res.redirect('/home')
         })
 
 }
