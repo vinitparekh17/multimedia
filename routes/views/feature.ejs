@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="326946298299-es2nul9ejjg86ir6d06kauhch4pmjbqv.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/2c582398a5.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar section -->
+    <%- include('_navbar') %>
+    <section id="feature">
+        <div class="container-fluid feature mt-5">
+            <center>
+                <h1>Features</h1>
+                <div class="line-mf"></div>
+            </center>
+            <div class="row mt-5 justify-content-center align-item-center d-flex">
+                <div class="mycard mt-2 col-lg-5 col-md-10">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M326.1 160l127.4-127.4C451.7 32.39 449.9 32 448 32h-86.06l-128 128H326.1zM166.1 160l128-128H201.9l-128 128H166.1zM497.7 56.19L393.9 160H512V96C512 80.87 506.5 67.15 497.7 56.19zM134.1 32H64C28.65 32 0 60.65 0 96v64h6.062L134.1 32zM0 416c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V192H0V416z" />
+                    </svg> <span class="h4 subheading">Movies & Web series</span>
+                    <ul>
+                        <li>This feature allows you to search any movies and web series.</li>
+                        <li>Get an exclusive informetion searched quaries.</li>
+                        <li>Get a brief overview of your desired movie or web series.</li>
+                    </ul>
+                    <center> <a href="/movies" class="btn third" role="button">Movies</a>
+                    </center>
+                </div>
+
+                <div class="mycard mt-2 col-lg-5 col-md-10">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+                    </svg>
+                    <span class="h4 subheading">Playstore</span>
+                    <ul>
+                        <li>This feature allows you to search any Apps and Games.</li>
+                        <li>Get an exclusive informetion searched application.</li>
+                        <li>It will redirect to the playstore</li>
+                    </ul>
+                    <center> <a role="button" href="/playstore" class="btn third">
+                            Playstore</a>
+                    </center>
+                </div>
+
+                <div class="mycard mt-2 col-lg-5 col-md-10">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path
+                            d="M176 322.9l.0002-114.9c0-8.75-7.25-16-16-16s-15.1 7.25-15.1 16L144 322.9c-18.62 6.625-32 24.25-32 45.13c0 26.5 21.5 48 48 48s48-21.5 48-48C208 347.1 194.6 329.5 176 322.9zM272 278.5V112c0-61.87-50.12-112-111.1-112S48 50.13 48 112v166.5c-19.75 24.75-32 55.5-32 89.5c0 79.5 64.5 143.1 144 143.1S304 447.5 304 368C304 334 291.8 303.1 272 278.5zM160 448c-44.13 0-80-35.87-80-79.1c0-25.5 12.25-48.88 32-63.75v-192.3c0-26.5 21.5-48 48-48s48 21.5 48 48v192.3c19.75 14.75 32 38.25 32 63.75C240 412.1 204.1 448 160 448z" />
+                    </svg>
+                    <span class="h4 subheading">Weather Caster</span>
+                    <ul>
+                        <li>This feature allows you to get weather details.</li>
+                        <li>Get temprature related searched location.</li>
+                        <li>Dynamic background according to weather condition.</li>
+                    </ul>
+                    <center> <a class="btn third" role="button" href="/weather">
+                            Weather Caster</a>
+                    </center>
+                </div>
+
+                <div class="mycard mt-2 col-lg-5 col-md-10">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M511.1 367.1c0 44.18-42.98 80-95.1 80s-95.1-35.82-95.1-79.1c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32.01 4.898V148.1L192 224l-.0023 208.1C191.1 476.2 149 512 95.1 512S0 476.2 0 432c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32 4.898V126.5c0-12.97 10.06-26.63 22.41-30.52l319.1-94.49C472.1 .6615 477.3 0 480 0c17.66 0 31.97 14.34 32 31.99L511.1 367.1z" />
+                    </svg>
+                    <span class="h4 subheading">Musify</span>
+                    <ul>
+                        <li>This feature allows you play songs</li>
+                        <li>Ads free experience</li>
+                        <li>Faster performance</li>
+                    </ul>
+                    <center> <a class="btn third" role="button" href="/music">
+                            Musify</a></center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/javascript/signout.js"></script>
+</body>
+
+</html>

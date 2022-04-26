@@ -20,7 +20,11 @@ router.post('/', (req, res) => {
     }
     verify()
         .then(() => {
-            res.cookie('session-token', token)
+            res.cookie('session-token', token,
+                {
+                    httpOnly: true,
+                    maxAge: 900000
+            })
             res.send("success")
         })
         .catch(console.error);

@@ -7,12 +7,13 @@ const key = `b31cf485`;
 router.get("/movies", checkAuth , (req, res) => {
     // res.sendFile(__dirname + "/components/movies.html")
     var user = req.user
-    res.render('movies', { Title: null, user});
+    res.render('movies', { Title: null, user, NavTitle: 'Movies'});
 })
 
 router.post("/movies", checkAuth, (req, res) => {
     var user = req.user
     var input = req.body.search;
+    var errorMsg = null
     var url = `https://www.omdbapi.com/?t=${input}&apikey=${key}`;
     try {
         https.get(url, (response) => {
@@ -21,10 +22,11 @@ router.post("/movies", checkAuth, (req, res) => {
             response.on("end", () => {
                 var { Title, Year, Rated, Released, Director, imdbRating, imdbVotes, Runtime, Genre, Writer, Actors, Plot, Language, Poster, Response } = JSON.parse(rawData)
                 if (Response == "False") {
-                    return res.sendFile(__dirname + "/error.html")
+                    errorMsg = 'Result not found, check your input and try again';
                 }
 
                 res.render("movies", {
+                    NavTitle: 'Movies',
                     Title: Title,
                     Year: Year,
                     Rated: Rated,
@@ -38,6 +40,7 @@ router.post("/movies", checkAuth, (req, res) => {
                     Actors: Actors,
                     Plot: Plot,
                     Poster: Poster,
+                    err: errorMsg,
                     user
                 })
             })

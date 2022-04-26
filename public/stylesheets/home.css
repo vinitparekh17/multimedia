@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/airstrike');
+
 .hero {
     margin-top: 2rem;
     width: 100%;
@@ -16,11 +18,17 @@
     padding: 1.5rem;
     height: 45%;
 }
+.subheading{
+    color: #333333 !important;
+}
 
-.text-content> h1, h3{
-    font-weight: 900;
-    background-size: 400%;
+.text-content > center > h3 , h1{
     color: #a00000;
+    font-family: 'Airstrike', sans-serif;
+}
+
+.text-content > center > h1{
+    font-size: 2.5rem;
 }
 
 .text-content > p {
@@ -39,6 +47,7 @@
 .svg {
     width: 2.5rem;
     height: 2.5rem;
+    color: #a00000;
 }
 
 .h4{
@@ -67,14 +76,10 @@ ul>li {
     color: #000;
 }
 
-.mycard>a {
+.mycard > a {
     text-decoration: none;
     color: #000;
     text-align: center;
-}
-
-.svg {
-    color: #fff;
 }
 
 /* pricing seciton  */
@@ -433,10 +438,7 @@ ul>li {
 }
 
 .price-heading h1 {
-    color: #FF0000;
-    font-weight: 800;
     margin: 0;
-    padding: 0 0 50px 0;
 }
 
 .demo-button {
@@ -519,4 +521,5 @@ ul>li {
 .third:hover {
     box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
     color: #333333;
+    background-color: #ffffff95;
 }

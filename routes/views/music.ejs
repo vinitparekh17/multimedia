@@ -20,249 +20,26 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/stylesheets/music.css" />
   <link rel="stylesheet" href="/stylesheets/index.css" />
+  <link rel="stylesheet" href="/stylesheets/music.css" />
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/2c582398a5.js" crossorigin="anonymous"></script>
   <title>MultiMedia</title>
 </head>
 
-<body id="body">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#"><strong>MultiMedia Explorer</strong></a>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/home#feature">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/home#pricing">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Modes
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/movies">Movies</a></li>
-              <li><a class="dropdown-item" href="/playstore">PlayStore</a></li>
-              <li><a class="dropdown-item" href="/anime">Anime</a></li>
-              <li><a class="dropdown-item" href="/weather">Weather</a></li>
-              <li><a class="dropdown-item" href="/music">Music</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="dropdown dropstart">
-        <img class="dropdown-toggle profile" type="button" id="dropdownMenuButton1" src="<%= user.picture %>"
-          data-bs-toggle="dropdown" aria-expanded="false">
-        <ul class="dropdown-menu me-5" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#"><%= user.name %></a></li>
-          <li><a class="dropdown-item" href="mailto:<%= user.email %>"><%= user.email %></a></li>
-          <li><a class="dropdown-item" href="/logout" onclick="signOut()">Sign out</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <%- include('_navbar') %>
   <div class="container">
     <div class="row" id="mt">
+      <% songdata.map( s => { %>
       <div class="cardmargin col-lg-3 col-sm-6">
         <div class="card">
-          <img src="https://media.discordapp.net/attachments/960040901261004830/960041574258065448/r0.jpg"
+          <img src="<%= s.coverPath %>"
             class="card-img-top" id="0" alt="..." />
-          <span class="sbtn" id="0"><i class="fa-solid i fa-circle-play"></i></span>
+          <span class="sbtn" id='<%= s.id%>'><i class="fa-solid i fa-circle-play"></i></span>
         </div>
       </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041574492942396/r1.jpg"
-            class="card-img-top" id="1" alt="..." />
-          <span class="sbtn" id="1"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://media.discordapp.net/attachments/960040901261004830/960041574685876254/r2.jpg"
-            class="card-img-top" id="2" alt="..." />
-          <span class="sbtn" id="2"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041574924947526/r4.jpg"
-            class="card-img-top" id="3" alt="..." />
-          <span class="sbtn" id="3"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041575155646525/r6.jpg"
-            class="card-img-top" id="4" alt="..." />
-          <span class="sbtn" id="4"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041575537336340/r7.jpg"
-            class="card-img-top" id="5" alt="..." />
-          <span class="sbtn" id="5"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041933395345528/h0.jpg"
-            class="card-img-top" id="6" alt="..." />
-          <span class="sbtn" id="6"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041933634416660/h1.jpg"
-            class="card-img-top" id="7" alt="..." />
-          <span class="sbtn" id="7"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041933839945768/h2.jpg"
-            class="card-img-top" id="8" alt="..." />
-          <span class="sbtn" id="8"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041934049673267/h3.jpg"
-            class="card-img-top" id="9" alt="..." />
-          <span class="sbtn" id="9"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041934271963156/h4.jpg"
-            class="card-img-top" id="10" alt="..." />
-          <span class="sbtn" id="10"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041934494253086/h5.jpg"
-            class="card-img-top" id="11" alt="..." />
-          <span class="sbtn" id="11"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://media.discordapp.net/attachments/960040901261004830/960042132171784262/h6.jpg"
-            class="card-img-top" id="12" alt="..." />
-          <span class="sbtn" id="12"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960042207233081374/h7.jpg"
-            class="card-img-top" id="13" alt="..." />
-          <span class="sbtn" id="13"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960044951910105098/images.jpeg"
-            class="card-img-top" id="14" alt="..." />
-          <span class="sbtn" id="14"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960053769108860968/h9.jpg"
-            class="card-img-top" id="15" alt="..." />
-          <span class="sbtn" id="15"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b273a108e07c661f9fc54de9c43a" class="card-img-top" id="16"
-            alt="..." />
-          <span class="sbtn" id="16"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b273a108e07c661f9fc54de9c43a" class="card-img-top" id="17"
-            alt="..." />
-          <span class="sbtn" id="17"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b2737b8d8ca1a8e14506c8f35233" class="card-img-top" id="18"
-            alt="..." />
-          <span class="sbtn" id="18"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b273d2aaf635815c265aa1ecdecc" class="card-img-top" id="19"
-            alt="..." />
-          <span class="sbtn" id="19"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b27362a57823eced1cb4fd93b2c1" class="card-img-top" id="20"
-            alt="..." />
-          <span class="sbtn" id="20"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b273b536cfb98c74558db48f8a46" class="card-img-top" id="21"
-            alt="..." />
-          <span class="sbtn" id="21"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b27394ae8395433c0c7521ac25ba" class="card-img-top" id="22"
-            alt="..." />
-          <span class="sbtn" id="22"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b273100fb4649eae80922bf1acbf" class="card-img-top" id="23"
-            alt="..." />
-          <span class="sbtn" id="23"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041361904652358/n0.jpg"
-            class="card-img-top" id="24" alt="..." />
-          <span class="sbtn" id="24"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041362101768202/n1.jpg"
-            class="card-img-top" id="25" alt="..." />
-          <span class="sbtn" id="25"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
-      <div class="cardmargin col-lg-3 col-sm-6">
-        <div class="card">
-          <img src="https://cdn.discordapp.com/attachments/960040901261004830/960041362324070400/n2.jpg"
-            class="card-img-top" id="26" alt="..." />
-          <span class="sbtn" id="26"><i class="fa-solid i fa-circle-play"></i></span>
-        </div>
-      </div>
+      <% }) %>
     </div>
     <div class="bottom">
       <div class="fixed-bottom">

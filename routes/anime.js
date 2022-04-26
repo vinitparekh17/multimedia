@@ -4,7 +4,7 @@ const checkAuth = require('../checkAuth');
 
 router.get("/anime", checkAuth, (req, res) => {
     var user = req.user
-    res.render('anime', { imageUrl: null, user })
+    res.render('anime', { imageUrl: null, user, NavTitle: 'Anime' })
 })
 
 router.post("/anime", checkAuth, (req, res) => {
@@ -28,6 +28,7 @@ router.post("/anime", checkAuth, (req, res) => {
                 try {
                     const parsedData = JSON.parse(rawData);
                     res.render('anime', {
+                        NavTitle: 'Anime',
                         imageUrl: parsedData.url,
                         user
                     })

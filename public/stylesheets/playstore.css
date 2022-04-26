@@ -1,14 +1,28 @@
-.w90{
-    width: 90%;
-    margin-top: 3rem;
-}
-
 .wrapper{
-    width: 90%;
+    width: 90vw;
     margin: 2rem auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #333;
+    border: 1px solid #000;
 }
 
 .applogo{
     width: 5rem;
+    height: 5rem;
     border-radius: 15px;
+    border: 1px solid;
+}
+
+p , h3{
+    margin: 1rem auto;
+}
+
+.btn{
+    width: 5rem;
+}
+
+h1, h3{
+    color: #9f0032;
 }

@@ -6,9 +6,10 @@ const https = require('https')
 
 router.get('/weather', checkAuth, (req, res) => {
     var user = req.user;
-    res.render('weather', { cityName: null, user })
+    res.render('weather', { cityName: null, NavTitle: 'Weather', user, err: null})
 })
 
+var errMsg = null;
 router.post("/weather", checkAuth, (req, res) => {
     var user = req.user;
     let city = req.body.city;
@@ -26,27 +27,36 @@ router.post("/weather", checkAuth, (req, res) => {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
         https.get(url, response => {
             response.on("data", data => {
-                const weatherData = JSON.parse(data);
-                console.log(weatherData);
-                // if (weatherData.cod != 200) {
-                //     return window.alert("Invalid input, try again!")
-                // }
-                console.log(weatherData);
-                res.render("weather", {
-                    cityName: city.slice(0, 1).toUpperCase() + city.slice(1, city.length).toLowerCase(),
-                    temp: Math.round(weatherData.main.temp - 273.15),
-                    weatherDescription: weatherData.weather[0].description,
-                    i2: `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`,
-                    minTemp: Math.round(weatherData.main.temp_min - 273.15),
-                    maxTemp: Math.round(weatherData.main.temp_max - 273.15),
-                    country: weatherData.sys.country,
-                    time: currentTime,
-                    user
-                })
+                let weatherData = JSON.parse(data);
+                if (weatherData.cod === 200) {
+                    res.render("weather", {
+                        NavTitle: 'Weather',
+                        cityName: city.slice(0, 1).toUpperCase() + city.slice(1, city.length).toLowerCase(),
+                        mainText: weatherData.weather[0].main,
+                        temp: Math.round(weatherData.main.temp - 273.15),
+                        weatherDescription: weatherData.weather[0].description,
+                        i2: `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`,
+                        minTemp: Math.round(weatherData.main.temp_min - 273.15),
+                        maxTemp: Math.round(weatherData.main.temp_max - 273.15),
+                        country: weatherData.sys.country,
+                        humidity: weatherData.main.humidity,
+                        windSpeed: weatherData.wind.speed,
+                        time: currentTime,
+                        err: errMsg,
+                        user
+                    })
+                } else {
+                    errMsg = 'Result not found, check your input and try again!'
+                    res.render('weather', {
+                        NavTitle: 'Weather',
+                        err: errMsg,
+                        user
+                    })
+                }
             })
         })
     } catch (e) {
-        return console.log(e);
+        console.log("e");
     }
 })
 

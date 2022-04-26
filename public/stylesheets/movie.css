@@ -1,4 +1,6 @@
 /* movies page */
+@import url('http://fonts.cdnfonts.com/css/airstrike');
+@import url('http://fonts.cdnfonts.com/css/bariol-bold');
 body{
     background: #fff;
 }
@@ -21,7 +23,7 @@ body{
 }
 
 #mtitle {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Airstrike Expanded', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 1rem;
@@ -41,7 +43,7 @@ body{
 
 .mcontain {
     position: relative;
-    background: rgba(255, 255, 255, 0.185);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
     width: 80%;
     margin: 2% 10%;
@@ -49,7 +51,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.521);
+    border: 1px solid rgba(50, 50, 50, 0.521);
+    box-shadow: 0 0 5px rgb(41, 41, 41);
     border-radius: 15px;
 }
 
@@ -63,7 +66,7 @@ body{
     line-height: 2;
     width: 90%;
     font-weight: 600;
-    font-family: arial;
+    font-family: 'Baroil bold';
     z-index: 1;
     color: #0A1931
 }

@@ -1,8 +1,17 @@
+@import url('http://fonts.cdnfonts.com/css/airstrike');
+@import url('http://fonts.cdnfonts.com/css/bariol-bold');
+
 body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     background: #e3e3e3;
+    font-family: 'Bariol Bold', sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Airstrike', sans-serif;
+    font-weight: normal;
 }
 
 .profile{

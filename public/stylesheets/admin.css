@@ -1,0 +1,20 @@
+@import url('http://fonts.cdnfonts.com/css/airstrike');
+
+h1 {
+    font-family: 'Airstrike', sans-serif;
+    color: rgb(0, 14, 164);
+}
+
+.img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+tr, td, th{
+    border: 1px solid #333;
+}
+
+.table{
+    width: 90%;
+}

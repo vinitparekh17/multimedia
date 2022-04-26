@@ -41,49 +41,7 @@
 
 <body>
     <!-- Navbar section  -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#"><strong>MultiMedia • Movies</strong></a>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/home#feature">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/home#pricing">Pricing</a>
-                            </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Modes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/movies">Movies</a></li>
-                                <li><a class="dropdown-item" href="/playstore">PlayStore</a></li>
-                                <li><a class="dropdown-item" href="/anime">Anime</a></li>
-                                <li><a class="dropdown-item" href="/weather">Weather</a></li>
-                                <li><a class="dropdown-item" href="/music">Music</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="dropdown dropstart">
-                    <img class="dropdown-toggle profile" type="button" id="dropdownMenuButton1" src="<%= user.picture %>" data-bs-toggle="dropdown" aria-expanded="false">
-                    <ul class="dropdown-menu me-5" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#"><%= user.name %></a></li>
-                        <li><a class="dropdown-item" href="mailto:<%= user.email %>"><%= user.email %></a></li>
-                        <li><a class="dropdown-item" href="/logout" onclick="signOut()">Sign out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <%- include('_navbar') %>
     <div class="moviecard">
     </div>
     <center>
@@ -93,63 +51,68 @@
         </form>
     </center>
     <% if(Title !== null) { %>
-    <section class="movies">
-        <div class="mcontain">
-            <div class="mcontent">
-                <center>
-                    <table class="mtable">
-                        <tr>
-                            <td class="mtd" id="mno-border" colspan="2">
-                                <h1 id="mtitle"><%= Title %> </h1>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="mtd">IMDb RATING</td>
-                            <td class="mtd">VOTES</td>
-                        </tr>
-
-                        <tr>
-                            <td class="mtd">⭐ <%= imdbRating%>/10</td>
-                            <td class="mtd"><%= imdbVotes %></td>
-                        </tr>
-                    </table>
-                    <%= Year %> • <%= Rated %> • <%= Runtime %>
-                </center>
-                <div class="row">
-                <div class="col-lg-6">
-                <img class="mt-5" style="border-radius: 10%; box-shadow: 0 2px 20px #101010" alt="poster"
-                    src=<%= Poster %> />
+        <% if(err) { %>
+            <h5 class="alert-danger p-3 text-center m-3"><%= err %></h5>
+            <% } else { %>
+                <section class="movies">
+                    <div class="mcontain">
+                        <div class="mcontent">
+                            <center>
+                                <table class="mtable">
+                                    <tr>
+                                        <td class="mtd" id="mno-border" colspan="2">
+                                            <h1 id="mtitle"><%= Title %> </h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mtd">IMDb RATING</td>
+                                        <td class="mtd">VOTES</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td class="mtd">⭐ <%= imdbRating%>/10</td>
+                                        <td class="mtd"><%= imdbVotes %></td>
+                                    </tr>
+                                </table>
+                                <%= Year %> • <%= Rated %> • <%= Runtime %>
+                            </center>
+                            <div class="row">
+                            <div class="col-lg-6">
+                            <img class="mt-5" style="border-radius: 10%; box-shadow: 0 2px 20px #101010" alt="poster"
+                                src=<%= Poster %> />
+                                </div>
+                                <div class="col-lg-6">
+                            <dl>
+                                <dt class="mdt">
+                                    <span class="mspan">Released</span>
+                                <dd><%= Released %></dd>
+                                </dt>
+                                <dt class="mdt">
+                                    <span class="mspan">Catagory</span>
+                                <dd><%= Genre %></dd>
+                                </dt>
+                                <dt class="mdt">
+                                    <span class="mspan">About</span>
+                                <dd>
+                                    <p id="mabout"><%= Plot %></p>
+                                </dd>
+                                </dt>
+                                <dt class="mdt">
+                                    <span class="mspan">Writers</span>
+                                <dd><%= Writer %></dd>
+                                </dt>
+                                <dt class="mdt">
+                                    <span class="mspan">Actors</span>
+                                <dd><%= Actors %></dd>
+                                </dt>
+                            </dl>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                <dl>
-                    <dt class="mdt">
-                        <span class="mspan">Released</span>
-                    <dd><%= Released %></dd>
-                    </dt>
-                    <dt class="mdt">
-                        <span class="mspan">Catagory</span>
-                    <dd><%= Genre %></dd>
-                    </dt>
-                    <dt class="mdt">
-                        <span class="mspan">About</span>
-                    <dd>
-                        <p id="mabout"><%= Plot %></p>
-                    </dd>
-                    </dt>
-                    <dt class="mdt">
-                        <span class="mspan">Writers</span>
-                    <dd><%= Writer %></dd>
-                    </dt>
-                    <dt class="mdt">
-                        <span class="mspan">Actors</span>
-                    <dd><%= Actors %></dd>
-                    </dt>
-                </dl>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </section>
+        
+        <% } %>
     <% } %>
 
     <script src="javascript/navbar.js"></script>
