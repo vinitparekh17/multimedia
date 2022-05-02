@@ -1,0 +1,136 @@
+openapi: 3.0.0
+
+info:
+  name: Multimedia Explorer
+  description: All in one web application to have deferent kind of entertainment
+  version: 1.0.1
+  contact:
+    email: vinitparekh1742@gmail.com
+    url: "https://www.vinitparekh.rocks"
+
+servers:
+  - url: "http://localhost:8000"
+    description: Local version of social app
+
+components:
+  securitySchemas:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: token
+    
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+paths:
+  /:
+    get:
+      tags:
+        - TEXT
+      summary: Returns a Goodle authentication page
+      responses:
+        200:
+          description: success
+
+  /movies:
+    post:
+      tags:
+        - TEXT
+      summary: Returns movie details based on search term
+      parameters:
+        - name: search
+          default: "shershaah"
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: success
+
+  /playstore:
+    post:
+      tags:
+        - TEXT
+      summary: Returns applications / games details based on search term
+      parameters:
+        - name: search
+          default: "class of clans"
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: success
+       
+  /anime:
+    post:
+      tags:
+        - TEXT
+      summary: Returns anime pictures details based on search
+      example: "neko, hug, pet, kiss, punch"
+      parameters:
+        - name: option
+          default: "neko"
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: success
+                
+  /weather:
+    post:
+      tags:
+        - TEXT
+      summary: Returns weather details based on search
+      parameters:
+        - name: city
+          default: "surat"
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: success
+                
+  /music:
+    post:
+      tags:
+        - TEXT
+      summary: Returns song list managed by admin
+      responses:
+        200:
+          description: success
+
+  /getSong:
+    get:
+      tags:
+        - ARRAYS
+      summary: Return an array of songs from mysql database
+      responses:
+        200:
+            description: success
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                      songName:
+                        type: string
+                      filePath:
+                        type: string
+
+          
+    
+                
+                
+

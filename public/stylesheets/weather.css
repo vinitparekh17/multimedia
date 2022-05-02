@@ -7,7 +7,7 @@
     box-shadow: 0 0 5px #000, 0 0 5px rgb(235, 253, 192) inset;
     color: rgb(217, 217, 217);
     text-shadow: 1px 0 1px #000;
-    background: linear-gradient(45deg, rgb(14, 133, 252), rgb(0, 244, 187))
+    /* background: linear-gradient(45deg, rgb(14, 133, 252), rgb(0, 244, 187)) */
 }
 
 table {

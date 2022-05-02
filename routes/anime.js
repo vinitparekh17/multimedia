@@ -2,14 +2,14 @@ const { Router } = require('express');
 const router = Router();
 const checkAuth = require('../checkAuth');
 
-router.get("/anime", checkAuth, (req, res) => {
+router.get("/animepanel", checkAuth, (req, res) => {
     var user = req.user
     res.render('anime', { imageUrl: null, user, NavTitle: 'Anime' })
 })
 
-router.post("/anime", checkAuth, (req, res) => {
+router.post("/animepanel", checkAuth, (req, res) => {
     var user = req.user
-    const option = req.body.quary;
+    const option = req.body.option;
     try {
         const { get } = require("https");
         let data;

@@ -60,6 +60,7 @@ img{
     position: absolute;
     left: 30%;
     top: 45%;
+    cursor: pointer;
     width: 60%
 }
 

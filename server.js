@@ -1,8 +1,13 @@
 const express = require("express");
 const ejs = require("ejs");
 const app = express();
-const cookieParser = require("cookie-parser");
+const cookieParser = require("cookie-parser"); const swaggerUi = require('swagger-ui-express');
+const Yaml = require('yamljs');
+const swaggerDocument = Yaml.load('./swagger.yaml');
+const fileupload = require('express-fileupload');
+const PORT = process.env.PORT || 3001
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
@@ -20,6 +25,7 @@ app.use(require('./routes/anime'))
 app.use(require('./routes/playstore'))
 app.use(require('./routes/weather'))
 app.use(require('./routes/music'))
+app.use(require('./routes/adminpanel'))
 app.use(require('./routes/admin'))
 
 

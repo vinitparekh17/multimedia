@@ -20,7 +20,23 @@ body{
     border-radius: 50%;
 }
 
+.my-btn{
+    background: linear-gradient(90deg, #f00, rgb(255, 56, 242));
+    color: #e3e3e3;
+}
+.my-btn:hover{
+    color: #e3e3e3;
+}
+
+.nav-link{
+    color: #333 !important;
+}
+
+.nav-link:hover{
+    text-shadow: 1px 1px 1px #fff;
+}
+
 .w90{
     width: 90%;
-    margin-top: 3rem;
+    margin-top: 5%;
 }

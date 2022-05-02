@@ -20,6 +20,17 @@ h1{
     margin-bottom: 2rem;
 }
 
-.abcRioButtonContentWrapper{
-    border-radius: 20px;
+img{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.red{
+    color: red;
+    font-weight: 700;
+}
+
+.hide{
+    display: none;
 }

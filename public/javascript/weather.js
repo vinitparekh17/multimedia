@@ -1,31 +1,33 @@
 let WeatherType = document.querySelector('[data-weather]').textContent;
-
+let card = document.querySelector(".text-content")
 
 if (WeatherType == 'Clear') {
-    document.querySelector(".text-content").background = "black";
+    card.style.background = "url('../images/clear.jpg')";
 } else if (WeatherType == 'Haze') {
-    document.querySelector(".text-content").background = "url('../images/haze.jpg')";
+    card.style.background = "url('../images/haze.jpg')";
 } else if (WeatherType == 'Clouds') {
-    document.querySelector(".text-content").background = "url('../images/cloudy.jpg')";
+    card.style.background = "url('../images/cloudy.jpg')";
 } else if (WeatherType == 'Rain') {
-    document.querySelector(".text-content").background = "url('../images/rainy.jpg')";
+    card.style.background = "url('../images/rainy.jpg')";
 } else if (WeatherType == 'Snow') {
-    document.querySelector(".text-content").background = "url('../images/snow.jpg')";
+    card.style.background = "url('../images/snow.jpg')";
 } else if (WeatherType == 'Sunny') {
-    document.querySelector(".text-content").background = "url('../images/sunny.jpg')";
+    card.style.background = "url('../images/sunny.jpg')";
 } else if (WeatherType == 'Thunderstorm') {
-    document.querySelector(".text-content").background = "url('../images/thunderstorm.jpg')";
+    card.style.background = "url('../images/thunderstorm.jpg')";
 } else if (WeatherType == 'Windy') {
-    document.querySelector(".text-content").background = "url('../images/windy.jpg')";
+    card.style.background = "url('../images/windy.jpg')";
 } else if (WeatherType == 'Fog') {
-    document.querySelector(".text-content").background = "url('../images/fogs.jpg')";
+    card.style.background = "url('../images/fogs.jpg')";
 } else if (WeatherType == 'Stormy') {
-    document.querySelector(".text-content").background = "url('../images/stormy.jpg')";
+    card.style.background = "url('../images/stormy.jpg')";
 } else if (WeatherType == 'Tornadoes') {
-    document.querySelector(".text-content").background = "url('../images/tornado.jpg')";
+    card.style.background = "url('../images/tornado.jpg')";
 } else if (WeatherType == 'Thundersnow') {
-    document.querySelector(".text-content").background = "url('../images/thundersnow.jpg')";
+    card.style.background = "url('../images/thundersnow.jpg')";
 } else if (WeatherType == 'Smoke') {
-    document.querySelector(".text-content").background = "url('../images/smoke.jpg')";
+    card.style.background = "url('../images/smoke.jpg')";
+} else {
+    console.log("err")
 }
 console.log(WeatherType);

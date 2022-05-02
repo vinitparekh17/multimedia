@@ -5,7 +5,6 @@ const router = Router();
 const key = `b31cf485`;
 
 router.get("/movies", checkAuth , (req, res) => {
-    // res.sendFile(__dirname + "/components/movies.html")
     var user = req.user
     res.render('movies', { Title: null, user, NavTitle: 'Movies'});
 })

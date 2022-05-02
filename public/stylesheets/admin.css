@@ -1,20 +1,30 @@
-@import url('http://fonts.cdnfonts.com/css/airstrike');
-
-h1 {
-    font-family: 'Airstrike', sans-serif;
-    color: rgb(0, 14, 164);
+.form-signin {
+    width: 330px;
+    padding: 15px;
+    margin: auto;
 }
 
-.img{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
+.form-signin .checkbox {
+    font-weight: 400;
 }
 
-tr, td, th{
-    border: 1px solid #333;
+.form-signin .form-floating:focus-within {
+    z-index: 2;
 }
 
-.table{
-    width: 90%;
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#my-btn {
+    background: linear-gradient(90deg, #f00, rgb(255, 56, 242));
+    color: #fff;
 }

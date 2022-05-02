@@ -1,20 +1,28 @@
 const { Router } = require('express');
-const checkAuth = require('../checkAuth');
 const router = Router();
-const db = require('../config/db')
+const checkAuth = require('../checkAuth');
 
+let err = null
 router.get('/admin', checkAuth, (req, res) => {
-    let sql = 'SELECT * from songdata'
-    db.query(sql, (e, result) => {
-        if (e) {
-            throw e
-        }
-        res.render('admin', {user: req.user, songData: result, NavTitle: 'Song Management'})
+    res.render('admin', {
+        user: req.user,
+        NavTitle: 'Admin Signin',
+        err: err
     })
 })
 
-router.post('/adminValidation', checkAuth, (req, res) => {
-    console.log(req.body);
+router.post('/admin', checkAuth, (req, res) => {
+    err = "Invalid credentials"
+    const { id, password } = req.body
+    if (id === '210510110050' && password === 'vinitparekhrocks') {
+        res.redirect('/adminpanel')
+    } else {
+        res.render('admin', {
+            user: req.user,
+            NavTitle: 'Admin Signin',
+            err: err
+        })
+    }
 })
 
-module.exports = router
+module.exports = router;
