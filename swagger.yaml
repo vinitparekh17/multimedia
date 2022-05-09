@@ -10,7 +10,7 @@ info:
 
 servers:
   - url: "http://localhost:8000"
-    description: Local version of social app
+    description: A multi platform web app
 
 components:
   securitySchemas:

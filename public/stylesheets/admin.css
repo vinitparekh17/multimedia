@@ -1,7 +1,19 @@
+@import url('http://fonts.cdnfonts.com/css/airstrike');
+
+.sub-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-signin {
-    width: 330px;
-    padding: 15px;
+    max-width: 350px;
+    width: 80%;
+    padding: 2.5rem;
     margin: auto;
+    background: #ffffff55;
+    border-radius: 20px;
+    border: 2px solid #fff;
 }
 
 .form-signin .checkbox {
@@ -27,4 +39,10 @@
 #my-btn {
     background: linear-gradient(90deg, #f00, rgb(255, 56, 242));
     color: #fff;
+}
+
+h1 {
+    color: #a00000;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
 }

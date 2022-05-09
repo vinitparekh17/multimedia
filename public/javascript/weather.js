@@ -2,7 +2,7 @@ let WeatherType = document.querySelector('[data-weather]').textContent;
 let card = document.querySelector(".text-content")
 
 if (WeatherType == 'Clear') {
-    card.style.background = "url('../images/clear.jpg')";
+    card.style.backgroundImage = "url('../images/clear.jpg')";
 } else if (WeatherType == 'Haze') {
     card.style.background = "url('../images/haze.jpg')";
 } else if (WeatherType == 'Clouds') {

@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/airstrike');
-
 .hero {
     margin-top: 2rem;
     width: 100%;
@@ -24,7 +22,7 @@
 
 .text-content > center > h3 , h1{
     color: #a00000;
-    font-family: 'Airstrike', sans-serif;
+    font-family: 'Oleo Script Swash Caps', sans-serif;
 }
 
 .text-content > center > h1{

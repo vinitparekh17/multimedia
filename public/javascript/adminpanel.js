@@ -1,5 +1,6 @@
 function showMenu(e) {
     let count = e - 1
+    console.log(count);
     document.querySelectorAll('.toggle')[count].classList.toggle('visually-hidden')
 }
 function hideMenu(e) {

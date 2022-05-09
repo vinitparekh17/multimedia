@@ -29,7 +29,7 @@ const db = mysql.createConnection({
 
 db.connect(e => {
     if (e) {
-        throw e
+        throw e.sqlMessage
     }
     console.log('Database connection successfull!');
 })

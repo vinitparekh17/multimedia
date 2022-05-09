@@ -2,12 +2,12 @@ const { Router } = require('express');
 const router = Router();
 const checkAuth = require('../checkAuth');
 
-router.get("/animepanel", checkAuth, (req, res) => {
+router.get("/anime", checkAuth, (req, res) => {
     var user = req.user
     res.render('anime', { imageUrl: null, user, NavTitle: 'Anime' })
 })
 
-router.post("/animepanel", checkAuth, (req, res) => {
+router.post("/getanime", checkAuth, (req, res) => {
     var user = req.user
     const option = req.body.option;
     try {

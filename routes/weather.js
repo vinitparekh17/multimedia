@@ -28,6 +28,7 @@ router.post("/weather", checkAuth, (req, res) => {
         https.get(url, response => {
             response.on("data", data => {
                 let weatherData = JSON.parse(data);
+                console.log(weatherData);
                 if (weatherData.cod === 200) {
                     res.render("weather", {
                         NavTitle: 'Weather',
@@ -42,7 +43,7 @@ router.post("/weather", checkAuth, (req, res) => {
                         humidity: weatherData.main.humidity,
                         windSpeed: weatherData.wind.speed,
                         time: currentTime,
-                        err: errMsg,
+                        err: null,
                         user
                     })
                 } else {

@@ -1,13 +1,15 @@
 .text-content {
     width: max-content;
     height: max-content;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 3rem;
     border-radius: 20px;
     border: 1px solid #000;
     box-shadow: 0 0 5px #000, 0 0 5px rgb(235, 253, 192) inset;
     color: rgb(217, 217, 217);
     text-shadow: 1px 0 1px #000;
-    /* background: linear-gradient(45deg, rgb(14, 133, 252), rgb(0, 244, 187)) */
 }
 
 table {

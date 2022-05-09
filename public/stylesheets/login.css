@@ -3,17 +3,28 @@
     padding: 0;
 }
 
+body{
+    background: #00000055;
+}
+
 .bg {
-        background: url('../images/bg.png') center / cover no-repeat;
+        background: url('../images/background.jpg') center / cover no-repeat;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
 }
 
-.text{
+.text > h1 {
+    font: 5rem 'Oleo Script Swash Caps', cursive;
+    text-shadow: 1px 1px 10px #333;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-family: 900;
     color: #fff;
-    font-weight: 900;
 }
 
 h1{
@@ -27,7 +38,7 @@ img{
 }
 
 .red{
-    color: red;
+    color: rgb(139, 0, 0);
     font-weight: 700;
 }
 

@@ -52,7 +52,7 @@ function keyEvent(key) {
                 playbtn.classList.remove("fa-play");
                 songBanner.classList.add("animate");
                 songIcons[songIndex].classList.remove('fa-circle-play');
-                [songIndex].classList.add('fa-circle-pause');
+                songIcons[songIndex].classList.add('fa-circle-pause');
             } else {
                 audioElement.pause();
                 playbtn.classList.remove("fa-pause");

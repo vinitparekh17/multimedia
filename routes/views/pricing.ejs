@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-signin-client_id"
         content="326946298299-es2nul9ejjg86ir6d06kauhch4pmjbqv.apps.googleusercontent.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/2c582398a5.js" crossorigin="anonymous"></script>
@@ -22,6 +27,7 @@
         crossorigin="anonymous"></script>
     <title>MultiMedia</title>
 </head>
+
 <body>
     <!-- navbar section -->
     <%- include('_navbar') -%>
@@ -31,7 +37,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-    
+
                             <div class="price-heading clearfix">
                                 <h1>MultiMedia Pricing</h1>
                                 <div class="line-mf mb-3"></div>
@@ -52,13 +58,13 @@
                                     </div>
                                     <div class="generic_price_tag clearfix">
                                         <span class="price">
-                                            <span class="sign">$</span>
-                                            <span class="currency">09</span>
-                                            <span class="cent">.99</span>
+                                            <span class="sign">₹</span>
+                                            <span class="currency">49</span>
+                                            <span class="cent">.00</span>
                                             <span class="month">/MON</span>
                                         </span>
                                     </div>
-    
+
                                 </div>
                                 <div class="generic_feature_list">
                                     <ul>
@@ -67,14 +73,14 @@
                                         <li><span>Extra</span> Features</li>
                                     </ul>
                                 </div>
-                                <div class="generic_price_btn clearfix">
-                                    <a class="" href="">Buy now</a>
+                                <div class="generic_price_btn clearfix" id="rzp-button1">
+                                    <a role="button">Buy now</a>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="col-md-4">
-    
+
                             <div class="generic_content active clearfix">
                                 <div class="generic_head_price clearfix">
                                     <div class="generic_head_content clearfix">
@@ -85,9 +91,9 @@
                                     </div>
                                     <div class="generic_price_tag clearfix">
                                         <span class="price">
-                                            <span class="sign">$</span>
-                                            <span class="currency">49</span>
-                                            <span class="cent">.99</span>
+                                            <span class="sign">₹</span>
+                                            <span class="currency">149</span>
+                                            <span class="cent">.00</span>
                                             <span class="month">/MON</span>
                                         </span>
                                     </div>
@@ -101,11 +107,11 @@
                                         <li><span>24/7</span> Support</li>
                                     </ul>
                                 </div>
-                                <div class="generic_price_btn clearfix">
-                                    <a class="" href="">Buy now</a>
+                                <div class="generic_price_btn clearfix" id="rzp-button2">
+                                    <a role="button">Buy now</a>
                                 </div>
                             </div>
-    
+
                         </div>
                         <div class="col-md-4">
                             <div class="generic_content clearfix">
@@ -118,9 +124,9 @@
                                     </div>
                                     <div class="generic_price_tag clearfix">
                                         <span class="price">
-                                            <span class="sign">$</span>
-                                            <span class="currency">99</span>
-                                            <span class="cent">.99</span>
+                                            <span class="sign">₹</span>
+                                            <span class="currency">399</span>
+                                            <span class="cent">.00</span>
                                             <span class="month">/MON</span>
                                         </span>
                                     </div>
@@ -134,8 +140,8 @@
                                         <li><span>24/7</span> Support</li>
                                     </ul>
                                 </div>
-                                <div class="generic_price_btn clearfix">
-                                    <a class="" href="">Buy now</a>
+                                <div class="generic_price_btn clearfix" id="rzp-button3">
+                                    <a role="button">Buy now</a>
                                 </div>
                             </div>
                         </div>
@@ -144,5 +150,8 @@
             </section>
         </div>
     </section>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="/javascript/payment.js"></script>
 </body>
+
 </html>

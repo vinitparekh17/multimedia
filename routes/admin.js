@@ -6,7 +6,7 @@ let err = null
 router.get('/admin', checkAuth, (req, res) => {
     res.render('admin', {
         user: req.user,
-        NavTitle: 'Admin Signin',
+        NavTitle: 'Admin',
         err: err
     })
 })
@@ -14,6 +14,7 @@ router.get('/admin', checkAuth, (req, res) => {
 router.post('/admin', checkAuth, (req, res) => {
     err = "Invalid credentials"
     const { id, password } = req.body
+    console.log(req.body);
     if (id === '210510110050' && password === 'vinitparekhrocks') {
         res.redirect('/adminpanel')
     } else {

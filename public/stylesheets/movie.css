@@ -1,5 +1,4 @@
 /* movies page */
-@import url('http://fonts.cdnfonts.com/css/airstrike');
 @import url('http://fonts.cdnfonts.com/css/bariol-bold');
 body{
     background: #fff;
@@ -23,7 +22,7 @@ body{
 }
 
 #mtitle {
-    font-family: 'Airstrike Expanded', sans-serif;
+    font-family: 'Oleo Script Swash Caps Expanded', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 1rem;

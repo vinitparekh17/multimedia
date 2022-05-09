@@ -6,7 +6,7 @@ const Yaml = require('yamljs');
 const swaggerDocument = Yaml.load('./swagger.yaml');
 const fileupload = require('express-fileupload');
 const PORT = process.env.PORT || 3001
-
+require('dotenv').config()
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
