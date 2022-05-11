@@ -46,38 +46,40 @@
 
     <div class="container-fluid d-flex justify-content-center align-items-center mt-5">
 
-    <% if(err === null) { %>
+        <% if(err === null) { %>
         <% if(cityName) { %>
         <div class="text-content">
-            <center>
-                <h1><%= cityName %></h1>
-                <p><%= time %></p>
-                <h5 data-weather><%= mainText %></h5>
-                <h1><%= temp %>&deg;</h1>
-                <table>
-                    <tr>
-                        <td><i class="fa-solid fa-droplet"></i> Humidity:</td>
-                        <td><i class="fa-solid fa-wind"></i> Pressure:</td>
-                    </tr>
-                    <tr>
-                        <td><%= humidity %> %</td>
-                        <td><%= windSpeed %></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-temperature-arrow-down"></i> Min</td>
-                        <td><i class="fa-solid fa-temperature-arrow-up"></i> Max</td>
-                    </tr>
-                    <tr>
-                        <td><%= minTemp %>&deg;</td>
-                        <td><%= maxTemp %>&deg;</td>
-                    </tr>
-                </table>
-            </center>
+            <div class="overlay">
+                <center>
+                    <h1><%= cityName %></h1>
+                    <p><%= time %></p>
+                    <h5 data-weather><%= mainText %></h5>
+                    <h1><%= temp %>&deg;</h1>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-droplet"></i> Humidity:</td>
+                            <td><i class="fa-solid fa-wind"></i> Pressure:</td>
+                        </tr>
+                        <tr>
+                            <td><%= humidity %> %</td>
+                            <td><%= windSpeed %></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-temperature-arrow-down"></i> Min</td>
+                            <td><i class="fa-solid fa-temperature-arrow-up"></i> Max</td>
+                        </tr>
+                        <tr>
+                            <td><%= minTemp %>&deg;</td>
+                            <td><%= maxTemp %>&deg;</td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
         </div>
         <% } %>
         <% } else { %>
-            <h5 class="alert-danger p-3 text-center m-3"><%= err %></h5>
-            <% } %>
+        <h5 class="alert-danger p-3 text-center m-3"><%= err %></h5>
+        <% } %>
     </div>
     <script src="/javascript/signout.js"></script>
     <script src="/javascript/weather.js"></script>

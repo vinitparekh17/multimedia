@@ -13,9 +13,9 @@ router.get('/admin', checkAuth, (req, res) => {
 
 router.post('/admin', checkAuth, (req, res) => {
     err = "Invalid credentials"
-    const { id, password } = req.body
+    const { id, password, email } = req.body
     console.log(req.body);
-    if (id === '210510110050' && password === 'vinitparekhrocks') {
+    if (id === '210510110050' && password === 'test123' && email === 'test@example.com') {
         res.redirect('/adminpanel')
     } else {
         res.render('admin', {

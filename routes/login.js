@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
             res.cookie('session-token', token,
                 {
                     httpOnly: true,
-                    maxAge: 900000
+                    maxAge: 3 * 24 * 60 * 60 * 1000
             })
             res.send("success")
         })
