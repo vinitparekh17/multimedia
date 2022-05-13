@@ -22,7 +22,7 @@ Make sure that you have installed XAMPP if not then [install](https://www.apache
 
 > Step 3: Start MySQL from XAMPP
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center" width="50%">
 
 
 > Step 4: Start Apache from XAMPP and paste the following URL in your browser
