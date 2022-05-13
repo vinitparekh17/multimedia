@@ -32,18 +32,23 @@ http://localhost/phpmyadmin/
 ```
 
 > Step 5: Create a database named `multimedia` and import the songdata.sql
+.
+> Step 6: Go to [firebase](https://console.firebase.google.com/) and generate your ClIENT_ID from there.
+
+</img src="https://cdn.discordapp.com/attachments/960919309075509278/974639482575921172/Screenshot_2022-05-13_171814.png" width="50%">
+
+> Step 7: Replace the client id in login.ejs and login.js folders checkAuth.js
+.
+> Step 8: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
 
 .
-> Step 6: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
-
-.
-> Step 7: Run the following command to start the project
+> Step 9: Run the following command to start the project
 
 ```bash
 yarn start
 ```
 
-> Step 8: Paste the following url into your browser
+> Step 10: Paste the following url into your browser
 
 ```text
 http:localhost:8000

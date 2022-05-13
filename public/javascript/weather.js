@@ -30,4 +30,3 @@ if (WeatherType == 'Clear') {
 } else {
     console.log("err")
 }
-console.log(WeatherType);
