@@ -49,6 +49,8 @@ yarn start
 http:localhost:8000
 ```
 
+**Project Info: [Download](https://cdn.discordapp.com/attachments/960919309075509278/974636195285991444/Multimedia.pptx)**
+
 ## Preview:
 
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933369143306/Screenshot_95.png" align="center" width="50%">
