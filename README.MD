@@ -7,7 +7,7 @@ This project work has been conducted on title Multimedia Explorer. The web appli
 ## How to run this project?
 
 > Step 1: Install [Node.js](https://nodejs.org/en/)
-
+.
 > Step 2: Run the following command in your terminal
 
 ```bash
@@ -24,7 +24,7 @@ Make sure that you have installed XAMPP if not then [install](https://www.apache
 
 > Step 4: Start MySQL from XAMPP
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center">
 
 
 > Step 5: Start Apache from XAMPP and paste the following URL in your browser
@@ -60,12 +60,12 @@ http:localhost:8000
 
 ## Preview:
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933369143306/Screenshot_95.png" align="center" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933369143306/Screenshot_95.png" align="center">
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933683712070/Screenshot_96.png" align="center" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933683712070/Screenshot_96.png" align="center">
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633934036017152/Screenshot_97.png" align="center" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633934036017152/Screenshot_97.png" align="center">
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633935348830258/Screenshot_101.png" align="center" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633935348830258/Screenshot_101.png" align="center">
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974645715215196220/Screenshot_93.png" align="center" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974645715215196220/Screenshot_93.png" align="center">
