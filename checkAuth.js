@@ -1,5 +1,5 @@
 const { OAuth2Client } = require('google-auth-library');
-let CLIENT_ID = `YOUR_GOOGLE_CLIENT_ID`
+let CLIENT_ID = `326946298299-es2nul9ejjg86ir6d06kauhch4pmjbqv.apps.googleusercontent.com`
 const client = new OAuth2Client(CLIENT_ID);
 
 const checkAuthenticated = (req, res, next) => {

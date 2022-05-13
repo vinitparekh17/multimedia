@@ -35,7 +35,7 @@ http://localhost/phpmyadmin/
 .
 > Step 6: Go to [firebase](https://console.firebase.google.com/) and generate your ClIENT_ID from there.
 
-</img src="https://cdn.discordapp.com/attachments/960919309075509278/974639482575921172/Screenshot_2022-05-13_171814.png" width="50%">
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974639482575921172/Screenshot_2022-05-13_171814.png" width="50%">
 
 > Step 7: Replace the client id in login.ejs and login.js folders checkAuth.js
 .
