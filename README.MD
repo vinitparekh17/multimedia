@@ -6,13 +6,15 @@ This project work has been conducted on title Multimedia Explorer. The web appli
 
 ## How to run this project?
 
-> Step 1: Run the following command in your terminal
+> Step 1: Install [Node.js](https://nodejs.org/en/)
+
+> Step 2: Run the following command in your terminal
 
 ```bash
 npm i yarn
 ```
 
-> Step 2: Now install the external depandency by using following command
+> Step 3: Now install the external depandency by using following command
 
 ```bash
 yarn install
@@ -20,35 +22,35 @@ yarn install
 
 Make sure that you have installed XAMPP if not then [install](https://www.apachefriends.org/download.html) it.
 
-> Step 3: Start MySQL from XAMPP
+> Step 4: Start MySQL from XAMPP
 
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center" width="50%">
 
 
-> Step 4: Start Apache from XAMPP and paste the following URL in your browser
+> Step 5: Start Apache from XAMPP and paste the following URL in your browser
 
 ```bash
 http://localhost/phpmyadmin/
 ```
 
-> Step 5: Create a database named `multimedia` and import the songdata.sql
+> Step 6: Create a database named `multimedia` and import the songdata.sql
 .
-> Step 6: Go to [firebase](https://console.firebase.google.com/) and generate your ClIENT_ID from there.
+> Step 7: Go to [firebase](https://console.firebase.google.com/) and generate your ClIENT_ID from there.
 
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974639482575921172/Screenshot_2022-05-13_171814.png" width="50%">
 
-> Step 7: Replace the client id in login.ejs and login.js folders checkAuth.js
+> Step 8: Replace the client id in login.ejs and login.js folders checkAuth.js
 .
-> Step 8: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
+> Step 9: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
 
 .
-> Step 9: Run the following command to start the project
+> Step 10: Run the following command to start the project
 
 ```bash
 yarn start
 ```
 
-> Step 10: Paste the following url into your browser
+> Step 11: Paste the following url into your browser
 
 ```text
 http:localhost:8000
