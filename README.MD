@@ -35,6 +35,7 @@ http://localhost/phpmyadmin/
 ```
 
 > Step 6: Create a database named `multimedia` and import the songdata.sql
+
 .
 > Step 7: Go to [firebase](https://console.firebase.google.com/) and generate your ClIENT_ID from there.
 
@@ -42,6 +43,7 @@ http://localhost/phpmyadmin/
 
 > Step 8: Replace the client id in login.ejs and login.js folders checkAuth.js
 .
+
 > Step 9: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
 
 .
