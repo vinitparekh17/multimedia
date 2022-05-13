@@ -49,6 +49,8 @@ yarn start
 http:localhost:8000
 ```
 
+## Preview:
+
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933369143306/Screenshot_95.png" align="center" width="50%">
 
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933683712070/Screenshot_96.png" align="center" width="50%">
