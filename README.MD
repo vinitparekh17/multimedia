@@ -34,6 +34,7 @@ http://localhost/phpmyadmin/
 
 __.__.__.__.__.__.
 > Step 6: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
+
 __.__.__.__.__.__.
 > Step 7: Run the following command to start the project
 
