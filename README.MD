@@ -21,11 +21,14 @@ yarn install
 Make sure that you have installed XAMPP if not then [install](https://www.apachefriends.org/download.html) it.
 
 > Step 3: Start MySQL from XAMPP
-\n
+
+
 > Step 4: Double click on songdata.sql named file
-\n
+
+
 > Step 5: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
-\n
+
+
 > Step 6: Run the following command to start the project
 
 ```bash
