@@ -1,8 +1,8 @@
 {
-  "name": "combo",
+  "name": "Multi-Media",
   "version": "1.0.0",
   "main": "server.js",
-  "repository": "https://github.com/vinitparekh17/multimedia.git",
+  "repository": "https://github.com/vinitparekh17/multimedia",
   "author": "Vinit Parekh <vinitparekh1742@gmail.com>",
   "license": "MIT",
   "dependencies": {
