@@ -22,7 +22,7 @@ Make sure that you have installed XAMPP if not then [install](https://www.apache
 
 > Step 3: Start MySQL from XAMPP
 
-<img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center" width="50%">
+</img src="https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png" align="center" width="50%">
 
 
 > Step 4: Start Apache from XAMPP and paste the following URL in your browser
@@ -48,3 +48,11 @@ yarn start
 ```text
 http:localhost:8000
 ```
+
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933369143306/Screenshot_95.png" align="center" width="50%">
+
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633933683712070/Screenshot_96.png" align="center" width="50%">
+
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633934036017152/Screenshot_97.png" align="center" width="50%">
+
+<img src="https://cdn.discordapp.com/attachments/960919309075509278/974633935348830258/Screenshot_101.png" align="center" width="50%">
