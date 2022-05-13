@@ -1,5 +1,5 @@
 // mysql queries
-// INSERT INTO multimedia values()
+// INSERT INTO songdata values()
 
 const mysql = require('mysql');
 
@@ -29,7 +29,7 @@ const db = mysql.createConnection({
 
 db.connect(e => {
     if (e) {
-        throw e.sqlMessage
+        throw e
     }
     console.log('Database connection successfull!');
 })
