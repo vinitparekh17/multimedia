@@ -7,6 +7,7 @@ This project work has been conducted on title Multimedia Explorer. The web appli
 ## How to run this project?
 
 > Step 1: Install [Node.js](https://nodejs.org/en/)
+
 .
 > Step 2: Run the following command in your terminal
 
