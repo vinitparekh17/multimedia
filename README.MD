@@ -22,7 +22,7 @@ Make sure that you have installed XAMPP if not then [install](https://www.apache
 
 > Step 3: Start MySQL from XAMPP
 
-</img src="<https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png>" align="center">
+<img src="<https://cdn.discordapp.com/attachments/960919309075509278/974629456201265202/Screenshot_2022-05-13_162758.png>" align="center">
 
 > Step 4: Start Apache from XAMPP and paste the following URL in your browser
 
@@ -32,10 +32,10 @@ http://localhost/phpmyadmin/
 
 > Step 5: Create a database named `multimedia` and import the songdata.sql
 
-__.__.__.__.__.__.
+.
 > Step 6: Go to [razorpay](https://dashboard.razorpay.com/app/keys) and get token and id from there and paste it on .env named file.
 
-__.__.__.__.__.__.
+.
 > Step 7: Run the following command to start the project
 
 ```bash
