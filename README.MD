@@ -37,7 +37,7 @@ http://localhost/phpmyadmin/
 > Step 6: Create a database named `multimedia` and import the songdata.sql
 
 .
-> Step 7: Go to [firebase](https://console.firebase.google.com/) and generate your ClIENT_ID from there.
+> Step 7: Go to [firebase](https://console.firebase.google.com/) and generate your CLIENT_ID from there.
 
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974639482575921172/Screenshot_2022-05-13_171814.png">
 
