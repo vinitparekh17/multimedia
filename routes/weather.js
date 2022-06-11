@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const router = Router();
 const checkAuth = require('../checkAuth');
-const key = "156ae8a16859d4cd6898848eaffbdcbd";
+const key = process.env.WEATHER_KEY;
 const https = require('https')
 
 router.get('/weather', checkAuth, (req, res) => {
