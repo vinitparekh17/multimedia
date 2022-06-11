@@ -2,7 +2,7 @@ const https = require('https');
 const { Router } = require('express');
 const checkAuth = require('../checkAuth');
 const router = Router();
-const key = `b31cf485`;
+const key = process.env.MOVIE_KEY;
 
 router.get("/movies", checkAuth , (req, res) => {
     var user = req.user
