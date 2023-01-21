@@ -1,5 +1,5 @@
 const { OAuth2Client } = require('google-auth-library');
-let CLIENT_ID = `326946298299-es2nul9ejjg86ir6d06kauhch4pmjbqv.apps.googleusercontent.com`
+let CLIENT_ID = ``;
 const client = new OAuth2Client(CLIENT_ID);
 
 const checkAuthenticated = (req, res, next) => {
@@ -10,7 +10,7 @@ const checkAuthenticated = (req, res, next) => {
     async function verify() {
         const ticket = await client.verifyIdToken({
             idToken: token,
-            audience: CLIENT_ID,  // Specify the CLIENT_ID of the app that accesses the backend
+            audience: CLIENT_ID,  // Specify the CLIENT_ID of the Google auth that can be accessed by the backend
         });
         const payload = ticket.getPayload();
         user.name = payload.name;
