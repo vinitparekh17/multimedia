@@ -71,3 +71,6 @@ http:localhost:8000
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974633935348830258/Screenshot_101.png" align="center">
 
 <img src="https://cdn.discordapp.com/attachments/960919309075509278/974645715215196220/Screenshot_93.png" align="center">
+
+## Notice:
+This project is no longer maintained by me since April 2022, so use it at your own!
